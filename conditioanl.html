@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional statement</title>
+    <p id="demo"></p>
+</head>
+<body>
+    
+    <script>
+        let score =60;
+        if(score>=70 && score <=100){
+            document.getElementById('demo').innerHTML="A"
+        }
+        else if (score>=60 && score <=69){
+            document.getElementById('demo').innerHTML="B"
+        }
+        else if (score>= 50 && score <=59){
+            document.getElementById('demo').innerHTML="C"
+        }
+        else if (score>= 40 && scoree <=49){
+            document.getElementById('demo').innerHTML="D"
+        }
+        else if (score>= 40 && score <= 45){
+            document.getElementById('demo').innerHTML="E"
+        }
+        else if (score>100)
+        document.getElementById('demo').innerHTML="F"
+
+        else{
+            document.getElementById('demo').innerHTML="invaild"
+        }
+    </script>
+    
+</body>
+</html>
