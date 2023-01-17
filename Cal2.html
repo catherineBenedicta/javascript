@@ -11,7 +11,7 @@
 <body>
  <table class="container">
     <tr>
-        <td colspan="3"><input class="display-box" placeholder="0" type="text" id="content" disabled></td>
+        <td colspan="3"><input class="display-box" placeholder="0" type="text" id="content"></td>
     </tr>
 <tr>
     <td><input type="button" value="C" onclick="clearScree('C')" id="btn"></td>
@@ -41,7 +41,7 @@
     <td><input type="button" value="%" onclick="display('%')" ></td>
     <td><input type="button" value="0" onclick="display('0')" ></td>
     <td><input type="button" value="." onclick="display('.')" ></td>
-    <td><input type="button" value="=" id="equal" onclick="equal()" id="btn" ></td>
+    <td><input type="button" value="=" onclick="calculate()"id="btn" ></td>
 </tr>
 
  </table>
@@ -54,9 +54,7 @@
         function display(value) {
             document.getElementById('content').value += value;
         }
-        function calculate(){
-            document.getElementById('content').innerHTML=""
-        }
+        
     </script>
     
     <script src="bootstrap.bundle.min.js"></script>
