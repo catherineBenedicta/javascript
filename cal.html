@@ -15,14 +15,11 @@
             <input type="text" placeholder="0" id="input" disabled>
         </div>
         <div class="buttons">
-            <!-- full Erase-->
-            <input type="button" value="AC" id="clear">
-            <!-- Erase single value-->
-            <input type="button" value="DEL" id="erase">
-            <button></button>
-            <input type="button" value="/" class="input-button">
-            <input type="button" value="*" class="input-button">
-            <!-- <label for="input-button">7</label> -->
+            <input type="button" value="C" class="input-button"onclick="document.getElementById('input').value='C'">
+            <input type="button" value="C" class="input-button"onclick="document.getElementById('input').value=''">
+            <input type="button" value="/" class="input-button"onclick="document.getElementById('input').value+='/'">
+            <input type="button" value="*" class="input-button"onclick="document.getElementById('input').value+='*'">
+            
             <input type="button" value="7" class="input-button" onclick="document.getElementById('input').value+='7'">
             <input type="button" value="8" class="input-button" onclick="document.getElementById('input').value+='8'">
             <input type="button" value="9" class="input-button" onclick="document.getElementById('input').value+='9'">

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function Name</title>
+</head>
+<body>
+    <p id="sum"></p>
+    <p id="subtract"></p>
+    <p id="multiply"></p>
+    <p id="divide"></p>
+    <p id="modulus"></p>
+    <p id="exponential"></p>
+
+    <script>
+        function sum(a,b,c){
+            document.getElementById('sum').innerHTML=a+c+b
+        }
+        sum(2,6,6)
+
+        function subtract(j,d){
+            document.getElementById('subtract').innerHTML=j-d
+        }
+        subtract(10,6);
+
+        function multiply(p,f){
+            document.getElementById('multiply').innerHTML=p*f
+        }
+        multiply(10,5);
+
+        function divide(m,h){
+            document.getElementById('divide').innerHTML=m/h
+        }
+        divide(20,7);
+
+        function modulus(s,j){
+            document.getElementById('modulus').innerHTML=s%j
+        }
+        modulus(90,7);
+
+        function exponential(u,l){
+            document.getElementById('exponential').innerHTML=u**l
+        }
+        exponential(9,2);
+        
+    </script>
+    
+</body>
+</html>

@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>conditional statement</title>
-    <p id="demo"></p>
 </head>
 <body>
-    
+    <h2>RESULT CHECKER</h2>
+    <P>Enter your number below the check box to see your garde</P>
+    <input type="text" id="score" oninput="garde()">
+    <p id="demo"></p>
+
     <script>
-        let score =60;
+        function garde(){
+            let score =document.getElementById('score').value;
         if(score>=70 && score <=100){
             document.getElementById('demo').innerHTML="A"
         }
@@ -32,6 +36,7 @@
         else{
             document.getElementById('demo').innerHTML="invaild"
         }
+    }
     </script>
     
 </body>
